@@ -183,7 +183,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     @Override
     public void onStop() {
         // task list 화면이 다른 화면으로 덮히거나 이동하여 안보이게 되는 지점.
-        //TODO : dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
+        //TODO : 3-4) Dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
         super.onStop();
     }
 
@@ -217,13 +217,13 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void showCurrentFilterToDotMatrix(TasksFilterType mCurrentFiltering) {
         switch (mCurrentFiltering) {
             case ALL_TASKS:
-                //TODO : dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                //TODO : 3-1) Dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 break;
             case ACTIVE_TASKS:
-                //TODO : dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                //TODO : 3-2) Dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 break;
             case COMPLETED_TASKS:
-                //TODO : dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                //TODO : 3-3) Dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 break;
         }
     }
@@ -270,8 +270,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void showTasks(List<Task> tasks) {
         mListAdapter.replaceData(tasks);
         // 초기 화면 진입이나 refresh 될 때마다 task(항목)을 불러오기 위해 view 에서 불리는 코드.
-        //TODO : mListAdapter.getCurrentActiveItems(); 를 data로 전달하고,
-        // 해당 값을 통해 현재 active 되어있는 항목의 개수를 LED로 표현한다.
+        //TODO : 2) LED - mListAdapter.getCurrentActiveItems(); 를 data로 전달하고, 해당 값을 통해 현재 active 되어있는 항목의 개수를 표현하는 함수 호출.
 
         mTasksView.setVisibility(View.VISIBLE);
         mNoTasksView.setVisibility(View.GONE);
@@ -351,7 +350,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     @Override
     public void showTaskMarkedComplete() {
         // task가 완료되었을 때 마다 view 에서 불리는 코드.
-        // TODO : TEXT LCD 에서 "Task marked complete" 글귀가 2초 뜬 후 사라진다.
+        // TODO : 1) TEXT LCD 에서 "Task marked complete" 글귀가 2초 뜬 후 사라진다.
         showMessage(getString(R.string.task_marked_complete));
     }
 
