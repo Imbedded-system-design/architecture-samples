@@ -18,6 +18,8 @@ package com.example.android.architecture.blueprints.todoapp.addedittask;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -78,6 +80,28 @@ public class AddEditTaskFragment extends Fragment implements AddEditTaskContract
                 mPresenter.saveTask(mTitle.getText().toString(), mDescription.getText().toString());
             }
         });
+
+        mDescription.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void afterTextChanged(Editable s) {}
+            @Override
+            public void beforeTextChanged(CharSequence s, int start,
+                                          int count, int after) {
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start,
+                                      int before, int count) {
+                //메모 내용이 변할 때마다 호출되는 함수. (타이핑이나 붙여넣기 기능에서도 동작함)
+                //TODO : 4-1) 7Segment - 현재 작성중인 글자 수를 보여주는 함수 호출 (data: mDescription.getText().toString().length())
+            }
+        });
+    }
+
+    @Override
+    public void onStop() {
+        //작성화면에서 나갈 때 호출되는 함수로, 글자수 초기화가 이루어져야 한다.
+        //TODO : 4-2) 7Segment - 현재 작성중인 글자 수를 보여주는 함수 호출 (data: 0)
+        super.onStop();
     }
 
     @Nullable
