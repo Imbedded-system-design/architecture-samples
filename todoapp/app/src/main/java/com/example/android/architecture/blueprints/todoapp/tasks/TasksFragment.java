@@ -247,6 +247,9 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     @Override
     public void showTasks(List<Task> tasks) {
         mListAdapter.replaceData(tasks);
+        // 초기 화면 진입이나 refresh 될 때마다 task(항목)을 불러오기 위해 view 에서 불리는 코드.
+        //TODO : mListAdapter.getCurrentActiveItems(); 를 data로 전달하고,
+        // 해당 값을 통해 현재 active 되어있는 항목의 개수를 LED로 표현한다.
 
         mTasksView.setVisibility(View.VISIBLE);
         mNoTasksView.setVisibility(View.GONE);
@@ -362,6 +365,16 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         public TasksAdapter(List<Task> tasks, TaskItemListener itemListener) {
             setList(tasks);
             mItemListener = itemListener;
+        }
+
+        public int getCurrentActiveItems() {
+            int count=0;
+            for (int i = 0; i < mTasks.size(); i++) {
+                if (mTasks.get(i).isActive()) {
+                    count++;
+                }
+            }
+            return count;
         }
 
         public void replaceData(List<Task> tasks) {
