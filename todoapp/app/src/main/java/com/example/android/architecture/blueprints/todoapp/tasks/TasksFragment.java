@@ -325,6 +325,8 @@ public class TasksFragment extends Fragment implements TasksContract.View {
 
     @Override
     public void showTaskMarkedComplete() {
+        // task가 완료되었을 때 마다 view 에서 불리는 코드.
+        // TODO : TEXT LCD 에서 "Task marked complete" 글귀가 2초 뜬 후 사라진다.
         showMessage(getString(R.string.task_marked_complete));
     }
 
