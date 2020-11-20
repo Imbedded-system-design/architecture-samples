@@ -152,6 +152,7 @@ public class TasksPresenter implements TasksContract.Presenter {
             // Set the filter label's text.
             showFilterLabel();
         }
+        mTasksView.showCurrentFilterToDotMatrix(mCurrentFiltering);
     }
 
     private void showFilterLabel() {

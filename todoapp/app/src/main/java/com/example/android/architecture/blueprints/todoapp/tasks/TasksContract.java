@@ -64,6 +64,8 @@ public interface TasksContract {
         boolean isActive();
 
         void showFilteringPopUpMenu();
+
+        void showCurrentFilterToDotMatrix(TasksFilterType mCurrentFiltering);
     }
 
     interface Presenter extends BasePresenter {

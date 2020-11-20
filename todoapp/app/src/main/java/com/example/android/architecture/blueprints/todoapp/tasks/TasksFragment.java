@@ -181,6 +181,13 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     }
 
     @Override
+    public void onStop() {
+        // task list 화면이 다른 화면으로 덮히거나 이동하여 안보이게 되는 지점.
+        //TODO : dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
+        super.onStop();
+    }
+
+    @Override
     public void showFilteringPopUpMenu() {
         PopupMenu popup = new PopupMenu(getContext(), getActivity().findViewById(R.id.menu_filter));
         popup.getMenuInflater().inflate(R.menu.filter_tasks, popup.getMenu());
@@ -204,6 +211,21 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         });
 
         popup.show();
+    }
+
+    @Override
+    public void showCurrentFilterToDotMatrix(TasksFilterType mCurrentFiltering) {
+        switch (mCurrentFiltering) {
+            case ALL_TASKS:
+                //TODO : dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                break;
+            case ACTIVE_TASKS:
+                //TODO : dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                break;
+            case COMPLETED_TASKS:
+                //TODO : dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                break;
+        }
     }
 
     /**
