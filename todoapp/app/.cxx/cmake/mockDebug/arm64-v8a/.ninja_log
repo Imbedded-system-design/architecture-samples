@@ -1,0 +1,9 @@
+# ninja log v5
+1	272	627668317	CMakeFiles/7segment.dir/src/main/jni/7segment.c.o	c93d8cb4a43e969f
+274	411	627668317	../../../../build/intermediates/cmake/mockDebug/obj/arm64-v8a/lib7segment.so	8664649c44ee0146
+2	82	627670318	CMakeFiles/dotmatrix.dir/src/main/jni/dotmatrix.c.o	b70369b3f68d2a1c
+82	176	627670318	../../../../build/intermediates/cmake/mockDebug/obj/arm64-v8a/libdotmatrix.so	26b8d12d288304a0
+2	141	627670755	CMakeFiles/dotmatrix.dir/src/main/jni/dotmatrix.c.o	b70369b3f68d2a1c
+141	222	627670755	../../../../build/intermediates/cmake/mockDebug/obj/arm64-v8a/libdotmatrix.so	26b8d12d288304a0
+2	132	627670814	CMakeFiles/dotmatrix.dir/src/main/jni/dotmatrix.c.o	b70369b3f68d2a1c
+132	210	627670814	../../../../build/intermediates/cmake/mockDebug/obj/arm64-v8a/libdotmatrix.so	26b8d12d288304a0

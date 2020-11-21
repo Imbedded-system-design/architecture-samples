@@ -53,6 +53,13 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * Display a grid of {@link Task}s. User can choose to view all, active or completed tasks.
  */
 public class TasksFragment extends Fragment implements TasksContract.View {
+    static {
+        System.loadLibrary("7segment");
+        System.loadLibrary("dotmatrix");
+    }
+
+    public native int SSegmentWrite(int data);
+    public native void DotmatrixWrite(int data);
 
     private TasksContract.Presenter mPresenter;
 
@@ -217,9 +224,13 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void showCurrentFilterToDotMatrix(TasksFilterType mCurrentFiltering) {
         switch (mCurrentFiltering) {
             case ALL_TASKS:
+                SSegmentWrite(6666);
                 //TODO : 3-1) Dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                DotmatrixWrite(4);
                 break;
             case ACTIVE_TASKS:
+                SSegmentWrite(5555);
+                DotmatrixWrite(7);
                 //TODO : 3-2) Dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 break;
             case COMPLETED_TASKS:
@@ -271,6 +282,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         mListAdapter.replaceData(tasks);
         // 초기 화면 진입이나 refresh 될 때마다 task(항목)을 불러오기 위해 view 에서 불리는 코드.
         //TODO : 2) LED - mListAdapter.getCurrentActiveItems(); 를 data로 전달하고, 해당 값을 통해 현재 active 되어있는 항목의 개수를 표현하는 함수 호출.
+        SSegmentWrite(7777);
 
         mTasksView.setVisibility(View.VISIBLE);
         mNoTasksView.setVisibility(View.GONE);

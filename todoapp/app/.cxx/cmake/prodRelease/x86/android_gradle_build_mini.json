@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "7segment-Release-x86": {
+      "artifactName": "7segment",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86\" 7segment",
+      "abi": "x86",
+      "output": "C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodRelease\\obj\\x86\\lib7segment.so",
+      "runtimeFiles": []
+    },
+    "dotmatrix-Release-x86": {
+      "artifactName": "dotmatrix",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86\" dotmatrix",
+      "abi": "x86",
+      "output": "C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodRelease\\obj\\x86\\libdotmatrix.so",
+      "runtimeFiles": []
+    }
+  }
+}
