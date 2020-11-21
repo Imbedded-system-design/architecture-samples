@@ -1,0 +1,61 @@
+{
+  "stringTable": {
+    "0": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -D_7segment_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Ddotmatrix_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "dotmatrix-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" dotmatrix",
+      "buildType": "debug",
+      "toolchain": "1467045116",
+      "abi": "x86_64",
+      "artifactName": "dotmatrix",
+      "files": [
+        {
+          "src": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\dotmatrix.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\x86_64\\libdotmatrix.so",
+      "runtimeFiles": []
+    },
+    "7segment-Debug-x86_64": {
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" 7segment",
+      "buildType": "debug",
+      "toolchain": "1467045116",
+      "abi": "x86_64",
+      "artifactName": "7segment",
+      "files": [
+        {
+          "src": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\7segment.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\x86_64\\lib7segment.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "1467045116": {
+      "cCompilerExecutable": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

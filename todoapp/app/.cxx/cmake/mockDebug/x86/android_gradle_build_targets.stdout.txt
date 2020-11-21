@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\jihun\Desktop\architecture-samples\todoapp\app\.cxx\cmake\mockDebug\x86'
+ninja: no work to do.

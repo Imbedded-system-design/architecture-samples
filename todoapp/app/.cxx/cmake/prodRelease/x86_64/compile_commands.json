@@ -1,0 +1,13 @@
+[
+{
+  "directory": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/x86_64",
+  "command": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -D_7segment_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\7segment.dir\\src\\main\\cpp\\7segment.c.o   -c C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\7segment.c",
+  "file": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/src/main/cpp/7segment.c"
+},
+
+{
+  "directory": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/x86_64",
+  "command": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=x86_64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Ddotmatrix_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\dotmatrix.dir\\src\\main\\cpp\\dotmatrix.c.o   -c C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\dotmatrix.c",
+  "file": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/src/main/cpp/dotmatrix.c"
+}
+]

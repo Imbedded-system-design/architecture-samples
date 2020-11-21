@@ -53,6 +53,13 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * Display a grid of {@link Task}s. User can choose to view all, active or completed tasks.
  */
 public class TasksFragment extends Fragment implements TasksContract.View {
+    static {
+        System.loadLibrary("7segment");
+        System.loadLibrary("dotmatrix");
+    }
+
+    public native int SSegmentWrite(int data);
+    public native void DotmatrixWrite(int data);
 
     private TasksContract.Presenter mPresenter;
 
@@ -218,9 +225,13 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         switch (mCurrentFiltering) {
             case ALL_TASKS:
                 //TODO : 3-1) Dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                SSegmentWrite(1234);
+                DotmatrixWrite(5);
                 break;
             case ACTIVE_TASKS:
                 //TODO : 3-2) Dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                SSegmentWrite(5678);
+                DotmatrixWrite(7);
                 break;
             case COMPLETED_TASKS:
                 //TODO : 3-3) Dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출

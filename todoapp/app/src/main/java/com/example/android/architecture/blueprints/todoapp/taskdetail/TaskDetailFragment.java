@@ -45,7 +45,6 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * Main UI for the task detail screen.
  */
 public class TaskDetailFragment extends Fragment implements TaskDetailContract.View {
-
     @NonNull
     private static final String ARGUMENT_TASK_ID = "TASK_ID";
 

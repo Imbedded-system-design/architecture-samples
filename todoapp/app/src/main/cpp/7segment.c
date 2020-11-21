@@ -10,7 +10,9 @@
 #include <android/log.h>
 
 JNIEXPORT jint JNICALL
-Java_com_example_a7segmentcontrol_MainActivity_SSegmentWrite(JNIEnv *env, jobject thiz, jint data) {
+Java_com_example_android_architecture_blueprints_todoapp_tasks_TasksFragment_SSegmentWrite(
+        JNIEnv *env, jobject thiz, jint data) {
+    // TODO: implement SSegmentWrite()
     int fd, ret;
     unsigned char bytevalues[4];
 

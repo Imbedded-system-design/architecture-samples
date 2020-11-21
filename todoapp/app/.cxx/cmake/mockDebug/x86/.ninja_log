@@ -1,0 +1,7 @@
+# ninja log v5
+6	185	627683651	CMakeFiles/dotmatrix.dir/src/main/cpp/dotmatrix.c.o	57d76e1cd42bfbdd
+1	190	627683651	CMakeFiles/7segment.dir/src/main/cpp/7segment.c.o	76790c914c7c616f
+186	284	627683651	../../../../build/intermediates/cmake/mockDebug/obj/x86/libdotmatrix.so	6e4c4c7647a1f07d
+190	284	627683651	../../../../build/intermediates/cmake/mockDebug/obj/x86/lib7segment.so	b0fc60cec2a136ff
+2	175	627683873	CMakeFiles/7segment.dir/src/main/cpp/7segment.c.o	76790c914c7c616f
+176	295	627683874	../../../../build/intermediates/cmake/mockDebug/obj/x86/lib7segment.so	b0fc60cec2a136ff
