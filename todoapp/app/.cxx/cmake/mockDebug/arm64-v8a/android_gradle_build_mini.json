@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\android.toolchain.cmake",
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\ndk\\21.1.6352462\\build\\cmake\\platforms.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "dotmatrix-Debug-arm64-v8a": {
+      "artifactName": "dotmatrix",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\arm64-v8a\" dotmatrix",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\arm64-v8a\\libdotmatrix.so",
+      "runtimeFiles": []
+    },
+    "7segment-Debug-arm64-v8a": {
+      "artifactName": "7segment",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\arm64-v8a\" 7segment",
+      "abi": "arm64-v8a",
+      "output": "C:\\Users\\jihun\\Documents\\GitHub\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\arm64-v8a\\lib7segment.so",
+      "runtimeFiles": []
+    }
+  }
+}

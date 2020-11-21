@@ -1,0 +1,5 @@
+ninja: Entering directory `C:\Users\jihun\Documents\GitHub\architecture-samples\todoapp\app\.cxx\cmake\mockDebug\x86'
+[1/4] Building C object CMakeFiles/7segment.dir/src/main/jni/7segment.c.o
+[2/4] Building C object CMakeFiles/dotmatrix.dir/src/main/jni/dotmatrix.c.o
+[3/4] Linking C shared library ..\..\..\..\build\intermediates\cmake\mockDebug\obj\x86\lib7segment.so
+[4/4] Linking C shared library ..\..\..\..\build\intermediates\cmake\mockDebug\obj\x86\libdotmatrix.so
