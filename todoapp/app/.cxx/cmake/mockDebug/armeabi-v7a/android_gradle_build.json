@@ -2,7 +2,9 @@
   "stringTable": {
     "0": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/mockDebug/armeabi-v7a",
     "1": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -D_7segment_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
-    "2": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Ddotmatrix_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+    "2": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Ddotmatrix_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "3": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlcd_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "4": "--target=armv7-none-linux-androideabi16 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dled_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
   },
   "buildFiles": [
     "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
@@ -29,6 +31,40 @@
       ],
       "headers": [],
       "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\armeabi-v7a\\lib7segment.so",
+      "runtimeFiles": []
+    },
+    "lcd-Debug-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\armeabi-v7a\" lcd",
+      "buildType": "debug",
+      "toolchain": "1467045116",
+      "abi": "armeabi-v7a",
+      "artifactName": "lcd",
+      "files": [
+        {
+          "src": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\lcd.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\armeabi-v7a\\liblcd.so",
+      "runtimeFiles": []
+    },
+    "led-Debug-armeabi-v7a": {
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\armeabi-v7a\" led",
+      "buildType": "debug",
+      "toolchain": "1467045116",
+      "abi": "armeabi-v7a",
+      "artifactName": "led",
+      "files": [
+        {
+          "src": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\led.c",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\armeabi-v7a\\libled.so",
       "runtimeFiles": []
     },
     "dotmatrix-Debug-armeabi-v7a": {

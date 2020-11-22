@@ -9,11 +9,25 @@
   ],
   "buildTargetsCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "lcd-Debug-x86_64": {
+      "artifactName": "lcd",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" lcd",
+      "abi": "x86_64",
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\x86_64\\liblcd.so",
+      "runtimeFiles": []
+    },
     "dotmatrix-Debug-x86_64": {
       "artifactName": "dotmatrix",
       "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" dotmatrix",
       "abi": "x86_64",
       "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\x86_64\\libdotmatrix.so",
+      "runtimeFiles": []
+    },
+    "led-Debug-x86_64": {
+      "artifactName": "led",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\x86_64\" led",
+      "abi": "x86_64",
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\x86_64\\libled.so",
       "runtimeFiles": []
     },
     "7segment-Debug-x86_64": {

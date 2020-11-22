@@ -54,12 +54,17 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public class TasksFragment extends Fragment implements TasksContract.View {
     static {
-        System.loadLibrary("7segment");
-        System.loadLibrary("dotmatrix");
+        System.loadLibrary("7segment");     // 7-Segment
+        System.loadLibrary("dotmatrix");    // Dot Matrix
+        System.loadLibrary("lcd");          // LCD
+        System.loadLibrary("led");          // LED
     }
 
     public native int SSegmentWrite(int data);
-    public native void DotmatrixWrite(int data);
+    public native int DotmatrixWrite(int data);
+    public native int LCDEmpty();
+    public native int LCDWrite(int data, int delay);
+    public native int LEDWrite(int data);
 
     private TasksContract.Presenter mPresenter;
 
@@ -191,6 +196,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void onStop() {
         // task list 화면이 다른 화면으로 덮히거나 이동하여 안보이게 되는 지점.
         //TODO : 3-4) Dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
+        DotmatrixWrite(0);
         super.onStop();
     }
 
@@ -225,16 +231,18 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         switch (mCurrentFiltering) {
             case ALL_TASKS:
                 //TODO : 3-1) Dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
-                SSegmentWrite(1234);
-                DotmatrixWrite(5);
+                DotmatrixWrite(1);
+                LCDWrite(1, 0);
                 break;
             case ACTIVE_TASKS:
                 //TODO : 3-2) Dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
-                SSegmentWrite(5678);
-                DotmatrixWrite(7);
+                DotmatrixWrite(2);
+                LCDWrite(2, 0);
                 break;
             case COMPLETED_TASKS:
                 //TODO : 3-3) Dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                DotmatrixWrite(3);
+                LCDWrite(3, 0);
                 break;
         }
     }
@@ -282,6 +290,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         mListAdapter.replaceData(tasks);
         // 초기 화면 진입이나 refresh 될 때마다 task(항목)을 불러오기 위해 view 에서 불리는 코드.
         //TODO : 2) LED - mListAdapter.getCurrentActiveItems(); 를 data로 전달하고, 해당 값을 통해 현재 active 되어있는 항목의 개수를 표현하는 함수 호출.
+        LEDWrite(mListAdapter.getCurrentActiveItems()); // Available Range: 0~255
 
         mTasksView.setVisibility(View.VISIBLE);
         mNoTasksView.setVisibility(View.GONE);
@@ -362,6 +371,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void showTaskMarkedComplete() {
         // task가 완료되었을 때 마다 view 에서 불리는 코드.
         // TODO : 1) TEXT LCD 에서 "Task marked complete" 글귀가 2초 뜬 후 사라진다.
+        LCDWrite(4, 2); // LCD에 글귀 출력
         showMessage(getString(R.string.task_marked_complete));
     }
 

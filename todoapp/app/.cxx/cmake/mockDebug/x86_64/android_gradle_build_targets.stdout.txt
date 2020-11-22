@@ -1,2 +1,9 @@
 ninja: Entering directory `C:\Users\jihun\Desktop\architecture-samples\todoapp\app\.cxx\cmake\mockDebug\x86_64'
-ninja: no work to do.
+[1/8] Building C object CMakeFiles/led.dir/src/main/cpp/led.c.o
+[2/8] Building C object CMakeFiles/lcd.dir/src/main/cpp/lcd.c.o
+[3/8] Building C object CMakeFiles/dotmatrix.dir/src/main/cpp/dotmatrix.c.o
+[4/8] Building C object CMakeFiles/7segment.dir/src/main/cpp/7segment.c.o
+[5/8] Linking C shared library ..\..\..\..\build\intermediates\cmake\mockDebug\obj\x86_64\lib7segment.so
+[6/8] Linking C shared library ..\..\..\..\build\intermediates\cmake\mockDebug\obj\x86_64\liblcd.so
+[7/8] Linking C shared library ..\..\..\..\build\intermediates\cmake\mockDebug\obj\x86_64\libled.so
+[8/8] Linking C shared library ..\..\..\..\build\intermediates\cmake\mockDebug\obj\x86_64\libdotmatrix.so

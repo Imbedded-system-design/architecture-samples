@@ -1,4 +1,6 @@
 C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a/CMakeFiles/7segment.dir
 C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a/CMakeFiles/dotmatrix.dir
+C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a/CMakeFiles/lcd.dir
+C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a/CMakeFiles/led.dir
 C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a/CMakeFiles/edit_cache.dir
 C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a/CMakeFiles/rebuild_cache.dir

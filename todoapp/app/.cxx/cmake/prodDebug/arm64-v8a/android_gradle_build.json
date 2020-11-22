@@ -2,7 +2,9 @@
   "stringTable": {
     "0": "C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodDebug/arm64-v8a",
     "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -D_7segment_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
-    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Ddotmatrix_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+    "2": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Ddotmatrix_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "3": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlcd_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC",
+    "4": "--target=aarch64-none-linux-android21 --gcc-toolchain=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dled_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
   },
   "buildFiles": [
     "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
@@ -14,6 +16,23 @@
   ],
   "buildTargetsCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "led-Debug-arm64-v8a": {
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\arm64-v8a\" led",
+      "buildType": "debug",
+      "toolchain": "1467045116",
+      "abi": "arm64-v8a",
+      "artifactName": "led",
+      "files": [
+        {
+          "src": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\led.c",
+          "flagsOrdinal": 4,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\arm64-v8a\\libled.so",
+      "runtimeFiles": []
+    },
     "dotmatrix-Debug-arm64-v8a": {
       "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\arm64-v8a\" dotmatrix",
       "buildType": "debug",
@@ -46,6 +65,23 @@
       ],
       "headers": [],
       "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\arm64-v8a\\lib7segment.so",
+      "runtimeFiles": []
+    },
+    "lcd-Debug-arm64-v8a": {
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodDebug\\arm64-v8a\" lcd",
+      "buildType": "debug",
+      "toolchain": "1467045116",
+      "abi": "arm64-v8a",
+      "artifactName": "lcd",
+      "files": [
+        {
+          "src": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\src\\main\\cpp\\lcd.c",
+          "flagsOrdinal": 3,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodDebug\\obj\\arm64-v8a\\liblcd.so",
       "runtimeFiles": []
     }
   },

@@ -39,6 +39,11 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * Main UI for the add task screen. Users can enter a task title and description.
  */
 public class AddEditTaskFragment extends Fragment implements AddEditTaskContract.View {
+    static {
+        System.loadLibrary("7segment");     // 7-Segment
+    }
+
+    public native int SSegmentWrite(int data);
 
     public static final String ARGUMENT_EDIT_TASK_ID = "EDIT_TASK_ID";
 
@@ -93,6 +98,7 @@ public class AddEditTaskFragment extends Fragment implements AddEditTaskContract
                                       int before, int count) {
                 //메모 내용이 변할 때마다 호출되는 함수. (타이핑이나 붙여넣기 기능에서도 동작함)
                 //TODO : 4-1) 7Segment - 현재 작성중인 글자 수를 보여주는 함수 호출 (data: mDescription.getText().toString().length())
+                SSegmentWrite(mDescription.getText().toString().length());
             }
         });
     }
@@ -101,6 +107,7 @@ public class AddEditTaskFragment extends Fragment implements AddEditTaskContract
     public void onStop() {
         //작성화면에서 나갈 때 호출되는 함수로, 글자수 초기화가 이루어져야 한다.
         //TODO : 4-2) 7Segment - 현재 작성중인 글자 수를 보여주는 함수 호출 (data: 0)
+        SSegmentWrite(0);
         super.onStop();
     }
 

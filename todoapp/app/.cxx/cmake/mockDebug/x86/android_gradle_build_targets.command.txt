@@ -4,5 +4,7 @@ arguments :
 C:\Users\jihun\Desktop\architecture-samples\todoapp\app\.cxx\cmake\mockDebug\x86
 7segment
 dotmatrix
+lcd
+led
 jvmArgs : 
 

@@ -31,31 +31,19 @@
   },
   {
     "level": "INFO",
-    "message": "- expected json C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\armeabi-v7a\\android_gradle_build.json file is not present, will remove stale json folder",
+    "message": "- a dependent build file changed",
     "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "tag": "prodRelease|armeabi-v7a"
   },
   {
     "level": "INFO",
-    "message": "- missing previous command file C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\armeabi-v7a\\build_command.txt, will remove stale json folder",
+    "message": "  - C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "tag": "prodRelease|armeabi-v7a"
   },
   {
     "level": "INFO",
-    "message": "- command changed from previous, will remove stale json folder",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "removing stale contents from \u0027C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\armeabi-v7a\u0027",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "created folder \u0027C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\armeabi-v7a\u0027",
+    "message": "keeping json folder \u0027C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\armeabi-v7a\u0027 but regenerating project",
     "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "tag": "prodRelease|armeabi-v7a"
   },
@@ -104,216 +92,6 @@
   {
     "level": "INFO",
     "message": "{\n  \"type\": \"configure\",\n  \"cacheArguments\": [\n    \"\",\n    \"-DCMAKE_FIND_ROOT_PATH\\u003dC:\\\\Users\\\\jihun\\\\Desktop\\\\architecture-samples\\\\todoapp\\\\app\\\\.cxx\\\\cmake\\\\prodRelease\\\\prefab\\\\armeabi-v7a\\\\prefab\",\n    \"-DCMAKE_BUILD_TYPE\\u003dRelease\",\n    \"-DCMAKE_TOOLCHAIN_FILE\\u003dC:\\\\Users\\\\jihun\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\21.1.6352462\\\\build\\\\cmake\\\\android.toolchain.cmake\",\n    \"-DANDROID_ABI\\u003darmeabi-v7a\",\n    \"-DANDROID_NDK\\u003dC:\\\\Users\\\\jihun\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\21.1.6352462\",\n    \"-DANDROID_PLATFORM\\u003dandroid-16\",\n    \"-DCMAKE_ANDROID_ARCH_ABI\\u003darmeabi-v7a\",\n    \"-DCMAKE_ANDROID_NDK\\u003dC:\\\\Users\\\\jihun\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\ndk\\\\21.1.6352462\",\n    \"-DCMAKE_EXPORT_COMPILE_COMMANDS\\u003dON\",\n    \"-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\\u003dC:\\\\Users\\\\jihun\\\\Desktop\\\\architecture-samples\\\\todoapp\\\\app\\\\build\\\\intermediates\\\\cmake\\\\prodRelease\\\\obj\\\\armeabi-v7a\",\n    \"-DCMAKE_MAKE_PROGRAM\\u003dC:\\\\Users\\\\jihun\\\\AppData\\\\Local\\\\Android\\\\Sdk\\\\cmake\\\\3.10.2.4988404\\\\bin\\\\ninja.exe\",\n    \"-DCMAKE_SYSTEM_NAME\\u003dAndroid\",\n    \"-DCMAKE_SYSTEM_VERSION\\u003d16\"\n  ]\n}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Check for working C compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":33,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working C compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Check for working C compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe -- works",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting C compiler ABI info",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":65,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compiler ABI info - done\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting C compiler ABI info - done",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting C compile features",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":96,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":126,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":155,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting C compile features - done\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting C compile features - done",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Check for working CXX compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":184,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Check for working CXX compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Check for working CXX compiler: C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe -- works",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting CXX compiler ABI info",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":211,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compiler ABI info - done\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting CXX compiler ABI info - done",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting CXX compile features",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":237,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":262,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":287,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"progressCurrent\":311,\"progressMaximum\":1000,\"progressMessage\":\"Configuring\",\"progressMinimum\":0,\"type\":\"progress\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "{\"cookie\":\"\",\"inReplyTo\":\"configure\",\"message\":\"Detecting CXX compile features - done\",\"type\":\"message\"}\n",
-    "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
-    "tag": "prodRelease|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
-    "message": "Detecting CXX compile features - done",
     "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "tag": "prodRelease|armeabi-v7a"
   },
@@ -379,7 +157,7 @@
   },
   {
     "level": "INFO",
-    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystem.cmake.in\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCCompiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-C.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCXXCompiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Determine-CXX.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android/Determine-Compiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeFindBinUtils.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-FindBinUtils.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCCompiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompilerABI.c\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCCompiler.cmake.in\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCXXCompiler.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeTestCompilerCommon.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompilerABI.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeParseImplicitLinkInfo.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineCompileFeatures.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Internal/FeatureTesting.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-FeatureTests.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX-TestableFeatures.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXCompiler.cmake.in\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"../../../../AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\",\"../../../../AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake\",\"../../../../AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.c\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.c\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.c\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/feature_tests.cxx\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"C:/Users/jihun/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"type\":\"reply\"}\n",
+    "message": "{\"buildFiles\":[{\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake\",\"../../../../AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake\"]},{\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists.txt\",\"../../../../AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\",\"../../../../AppData/Local/Android/Sdk/ndk/21.1.6352462/build/cmake/platforms.cmake\"]},{\"isCMake\":false,\"isTemporary\":true,\"sources\":[\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake\",\".cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake\"]}],\"cmakeRootDirectory\":\"C:/Users/jihun/AppData/Local/Android/Sdk/cmake/3.10.2.4988404/share/cmake-3.10\",\"cookie\":\"\",\"inReplyTo\":\"cmakeInputs\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"type\":\"reply\"}\n",
     "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "tag": "prodRelease|armeabi-v7a"
   },
@@ -391,7 +169,7 @@
   },
   {
     "level": "INFO",
-    "message": "{\"configurations\":[{\"name\":\"Release\",\"projects\":[{\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"name\":\"devicecontrol\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"targets\":[{\"artifacts\":[\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/build/intermediates/cmake/prodRelease/obj/armeabi-v7a/libdotmatrix.so\"],\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"dotmatrix_EXPORTS\"],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/dotmatrix.c\"]}],\"fullName\":\"libdotmatrix.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"C\",\"name\":\"dotmatrix\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"sysroot\":\"C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"},{\"artifacts\":[\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/build/intermediates/cmake/prodRelease/obj/armeabi-v7a/lib7segment.so\"],\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"_7segment_EXPORTS\"],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/7segment.c\"]}],\"fullName\":\"lib7segment.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"C\",\"name\":\"7segment\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"sysroot\":\"C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
+    "message": "{\"configurations\":[{\"name\":\"Release\",\"projects\":[{\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"name\":\"devicecontrol\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"targets\":[{\"artifacts\":[\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/build/intermediates/cmake/prodRelease/obj/armeabi-v7a/libled.so\"],\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"led_EXPORTS\"],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/led.c\"]}],\"fullName\":\"libled.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"C\",\"name\":\"led\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"sysroot\":\"C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"},{\"artifacts\":[\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/build/intermediates/cmake/prodRelease/obj/armeabi-v7a/libdotmatrix.so\"],\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"dotmatrix_EXPORTS\"],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/dotmatrix.c\"]}],\"fullName\":\"libdotmatrix.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"C\",\"name\":\"dotmatrix\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"sysroot\":\"C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"},{\"artifacts\":[\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/build/intermediates/cmake/prodRelease/obj/armeabi-v7a/liblcd.so\"],\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"lcd_EXPORTS\"],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/lcd.c\"]}],\"fullName\":\"liblcd.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"C\",\"name\":\"lcd\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"sysroot\":\"C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"},{\"artifacts\":[\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/build/intermediates/cmake/prodRelease/obj/armeabi-v7a/lib7segment.so\"],\"buildDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a\",\"fileGroups\":[{\"compileFlags\":\"-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE\u003d2 -march\u003darmv7-a -mthumb -Wformat -Werror\u003dformat-security  -Oz -DNDEBUG  -fPIC  \",\"defines\":[\"_7segment_EXPORTS\"],\"isGenerated\":false,\"language\":\"C\",\"sources\":[\"src/main/cpp/7segment.c\"]}],\"fullName\":\"lib7segment.so\",\"linkFlags\":\"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments\",\"linkLibraries\":\"-llog -latomic -lm\",\"linkerLanguage\":\"C\",\"name\":\"7segment\",\"sourceDirectory\":\"C:/Users/jihun/Desktop/architecture-samples/todoapp/app\",\"sysroot\":\"C:/Users/jihun/AppData/Local/Android/Sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/windows-x86_64/sysroot\",\"type\":\"SHARED_LIBRARY\"}]}]}],\"cookie\":\"\",\"inReplyTo\":\"codemodel\",\"type\":\"reply\"}\n",
     "file": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\CMakeLists.txt",
     "tag": "prodRelease|armeabi-v7a"
   },

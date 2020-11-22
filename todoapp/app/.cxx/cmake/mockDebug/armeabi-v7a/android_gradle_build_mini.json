@@ -16,6 +16,20 @@
       "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\armeabi-v7a\\lib7segment.so",
       "runtimeFiles": []
     },
+    "lcd-Debug-armeabi-v7a": {
+      "artifactName": "lcd",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\armeabi-v7a\" lcd",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\armeabi-v7a\\liblcd.so",
+      "runtimeFiles": []
+    },
+    "led-Debug-armeabi-v7a": {
+      "artifactName": "led",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\armeabi-v7a\" led",
+      "abi": "armeabi-v7a",
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\mockDebug\\obj\\armeabi-v7a\\libled.so",
+      "runtimeFiles": []
+    },
     "dotmatrix-Debug-armeabi-v7a": {
       "artifactName": "dotmatrix",
       "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\mockDebug\\armeabi-v7a\" dotmatrix",

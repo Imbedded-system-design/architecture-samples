@@ -9,6 +9,20 @@
   ],
   "buildTargetsCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
+    "led-Release-x86_64": {
+      "artifactName": "led",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86_64\" led",
+      "abi": "x86_64",
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodRelease\\obj\\x86_64\\libled.so",
+      "runtimeFiles": []
+    },
+    "lcd-Release-x86_64": {
+      "artifactName": "lcd",
+      "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86_64\" lcd",
+      "abi": "x86_64",
+      "output": "C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\build\\intermediates\\cmake\\prodRelease\\obj\\x86_64\\liblcd.so",
+      "runtimeFiles": []
+    },
     "7segment-Release-x86_64": {
       "artifactName": "7segment",
       "buildCommand": "C:\\Users\\jihun\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\jihun\\Desktop\\architecture-samples\\todoapp\\app\\.cxx\\cmake\\prodRelease\\x86_64\" 7segment",
