@@ -104,11 +104,11 @@ public class AddEditTaskFragment extends Fragment implements AddEditTaskContract
     }
 
     @Override
-    public void onStop() {
+    public void onPause() {
         //작성화면에서 나갈 때 호출되는 함수로, 글자수 초기화가 이루어져야 한다.
         //TODO : 4-2) 7Segment - 현재 작성중인 글자 수를 보여주는 함수 호출 (data: 0)
         SSegmentWrite(0);
-        super.onStop();
+        super.onPause();
     }
 
     @Nullable
