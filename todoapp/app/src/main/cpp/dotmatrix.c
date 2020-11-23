@@ -24,7 +24,7 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
         return -1;
     }
 
-    write(fd, &data, sizeof(data));
+    ret = write(fd, &data, sizeof(data));
     if (ret < 0) {
         __android_log_print(ANDROID_LOG_ERROR, "DotMatrixWrite", "write error");
         return -1;
