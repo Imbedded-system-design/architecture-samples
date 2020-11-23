@@ -54,13 +54,11 @@ import static com.google.common.base.Preconditions.checkNotNull;
  */
 public class TasksFragment extends Fragment implements TasksContract.View {
     static {
-        System.loadLibrary("7segment");     // 7-Segment
         System.loadLibrary("dotmatrix");    // Dot Matrix
         System.loadLibrary("lcd");          // LCD
         System.loadLibrary("led");          // LED
     }
 
-    public native int SSegmentWrite(int data);
     public native int DotmatrixWrite(int data);
     public native int LCDEmpty();
     public native int LCDWrite(int data, int delay);
