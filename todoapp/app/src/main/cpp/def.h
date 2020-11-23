@@ -9,4 +9,3 @@
 #define LCD_FILTER_ACTIVE           2
 #define LCD_FILTER_COMPLETED        3
 #define LCD_TASK_MARKED_COMPLETE    4
-#define LCD_EMPTY                   5

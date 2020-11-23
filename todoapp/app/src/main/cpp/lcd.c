@@ -71,7 +71,6 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
     else if(data == LCD_FILTER_ACTIVE) write(fd, "Filter", strlen("Filter"));
     else if(data == LCD_FILTER_COMPLETED) write(fd, "Filter", strlen("Filter"));
     else if(data == LCD_TASK_MARKED_COMPLETE) write(fd, "Task marked comp", strlen("Task marked comp"));
-    else if(data == LCD_EMPTY) write(fd, "                ", strlen("                "));
 
     pos = 16;
     ioctl(fd, LCD_SET_CURSOR_POS, &pos, _IOC_SIZE(LCD_SET_CURSOR_POS));
@@ -79,7 +78,6 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
     else if(data == LCD_FILTER_ACTIVE) write(fd, "Active", strlen("Active"));
     else if(data == LCD_FILTER_COMPLETED) write(fd, "Complete", strlen("Complete"));
     else if(data == LCD_TASK_MARKED_COMPLETE) write(fd, "lete", strlen("lete"));
-    else if(data == LCD_EMPTY) write(fd, "        ", strlen("        "));
 
     // Set Empty
     if(delay != 0) {
