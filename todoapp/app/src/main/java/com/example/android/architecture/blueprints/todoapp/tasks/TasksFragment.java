@@ -307,6 +307,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
 
     @Override
     public void showNoTasks() {
+        LEDWrite(0);
         showNoTasksViews(
                 getResources().getString(R.string.no_tasks_all),
                 R.drawable.ic_assignment_turned_in_24dp,
