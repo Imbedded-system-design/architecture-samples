@@ -197,6 +197,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         // task list 화면이 다른 화면으로 덮히거나 이동하여 안보이게 되는 지점.
         //TODO : 3-4) Dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
         DotmatrixWrite(0);
+        LCDWrite(5, 0);
         super.onStop();
     }
 
