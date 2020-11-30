@@ -166,6 +166,30 @@ public class TasksFragment extends Fragment implements TasksContract.View {
 
         setHasOptionsMenu(true);
 
+        // OnCreateView : 메인 페이지가 열릴때 마다 호출되는 함수
+        class NewRunnable implements Runnable {
+            @Override
+            public void run() {
+                while (true) {
+                    try {
+                        int pushButtonNum = -1;
+                        //TODO : pushButton에서 눌려진 값을 받아와 pushButtonNum에 넣는다.
+                        if (pushButtonNum > -1) {
+                            //TODO : LCDWrite에 mListAdapter.getItem(pushButtonNum).getDescription() string을 5초간 출력한다.
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        NewRunnable nr = new NewRunnable();
+        Thread t = new Thread(nr);
+        t.start();
+
+
+
         return root;
     }
 
