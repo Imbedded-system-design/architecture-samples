@@ -1,6 +1,0 @@
-C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/7segment.dir
-C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/dotmatrix.dir
-C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/lcd.dir
-C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/led.dir
-C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/edit_cache.dir
-C:/Users/jihun/Desktop/architecture-samples/todoapp/app/.cxx/cmake/prodRelease/armeabi-v7a/CMakeFiles/rebuild_cache.dir

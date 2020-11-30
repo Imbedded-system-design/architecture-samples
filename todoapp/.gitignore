@@ -8,6 +8,5 @@ build
 .settings/
 .classpath
 .DS_Store
-*.cxx
-app/.cxx/*
-cxx/
+app/.cxx
+cxx
