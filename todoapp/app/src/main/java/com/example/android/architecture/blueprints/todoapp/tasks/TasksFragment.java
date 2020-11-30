@@ -193,7 +193,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     @Override
     public void onStop() {
         // task list 화면이 다른 화면으로 덮히거나 이동하여 안보이게 되는 지점.
-        //TODO : 3-4) Dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
+        // 3-4) Dot matrix - 현재 filter 이미지 보여주는 화면 종료 함수 호출
         DotmatrixWrite(0);
         LCDEmpty();
         LEDWrite(0);
@@ -230,17 +230,17 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     public void showCurrentFilterToDotMatrix(TasksFilterType mCurrentFiltering) {
         switch (mCurrentFiltering) {
             case ALL_TASKS:
-                //TODO : 3-1) Dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                // 3-1) Dot matrix - 모든 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 DotmatrixWrite(1);
                 LCDWrite(1, 0);
                 break;
             case ACTIVE_TASKS:
-                //TODO : 3-2) Dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                // 3-2) Dot matrix - Active 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 DotmatrixWrite(2);
                 LCDWrite(2, 0);
                 break;
             case COMPLETED_TASKS:
-                //TODO : 3-3) Dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
+                // 3-3) Dot matrix - completed 된 항목 보여주는 상태라는 이미지 보여주는 함수 호출
                 DotmatrixWrite(3);
                 LCDWrite(3, 0);
                 break;
