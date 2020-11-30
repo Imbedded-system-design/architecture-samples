@@ -24,6 +24,8 @@ import com.google.common.base.Strings;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.Date;
+
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
@@ -129,6 +131,7 @@ public class TaskDetailPresenter implements TaskDetailContract.Presenter {
     private void showTask(@NonNull Task task) {
         String title = task.getTitle();
         String description = task.getDescription();
+        Date created = task.getCreated();
 
         if (Strings.isNullOrEmpty(title)) {
             mTaskDetailView.hideTitle();
@@ -141,6 +144,13 @@ public class TaskDetailPresenter implements TaskDetailContract.Presenter {
         } else {
             mTaskDetailView.showDescription(description);
         }
+
+        if (created == null){
+            mTaskDetailView.hideCreated();
+        } else {
+            mTaskDetailView.showCreated(created);
+        }
+
         mTaskDetailView.showCompletionStatus(task.isCompleted());
     }
 }

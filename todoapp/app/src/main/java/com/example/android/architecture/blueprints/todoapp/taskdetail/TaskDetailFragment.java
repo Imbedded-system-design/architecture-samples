@@ -19,6 +19,7 @@ package com.example.android.architecture.blueprints.todoapp.taskdetail;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,6 +39,9 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -142,6 +146,18 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     }
 
     @Override
+    public void hideCreated() {
+        // TODO 1-2) LCD Empty() 함수 사용
+    }
+
+    @Override
+    public void showCreated(Date created) {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd\nHH:mm");
+        //출력결과 : 2020.11.30\n16:36
+        // TODO 1-1) LCD_write()로 sdf.format(created)를 출력한다
+    }
+
+    @Override
     public void showCompletionStatus(final boolean complete) {
         checkNotNull(mDetailCompleteStatus);
 
@@ -180,6 +196,12 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     public void showTaskMarkedActive() {
         Snackbar.make(getView(), getString(R.string.task_marked_active), Snackbar.LENGTH_LONG)
                 .show();
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        hideCreated();
     }
 
     @Override
