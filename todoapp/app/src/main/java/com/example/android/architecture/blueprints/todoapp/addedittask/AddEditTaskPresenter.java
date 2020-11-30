@@ -22,6 +22,8 @@ import com.example.android.architecture.blueprints.todoapp.data.source.TasksData
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.Date;
+
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
@@ -69,11 +71,16 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
 
     @Override
     public void saveTask(String title, String description) {
+    }
+
+    @Override
+    public void saveTask(String title, String description, Date created) {
         if (isNewTask()) {
             createTask(title, description);
         } else {
-            updateTask(title, description);
+            updateTask(title, description, created);
         }
+
     }
 
     @Override
@@ -112,7 +119,7 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
     }
 
     private void createTask(String title, String description) {
-        Task newTask = new Task(title, description);
+        Task newTask = new Task(title, description, new Date());
         if (newTask.isEmpty()) {
             mAddTaskView.showEmptyTaskError();
         } else {
@@ -121,11 +128,11 @@ public class AddEditTaskPresenter implements AddEditTaskContract.Presenter,
         }
     }
 
-    private void updateTask(String title, String description) {
+    private void updateTask(String title, String description, Date created) {
         if (isNewTask()) {
             throw new RuntimeException("updateTask() was called but task is new.");
         }
-        mTasksRepository.saveTask(new Task(title, description, mTaskId));
+        mTasksRepository.saveTask(new Task(title, description, mTaskId, created));
         mAddTaskView.showTasksList(); // After an edit, go back to the list.
     }
 }

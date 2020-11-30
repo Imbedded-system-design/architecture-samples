@@ -19,14 +19,20 @@ package com.example.android.architecture.blueprints.todoapp.data.source.local;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+import androidx.room.TypeConverter;
+import androidx.room.TypeConverters;
+
 import android.content.Context;
 
 import com.example.android.architecture.blueprints.todoapp.data.Task;
+
+import java.util.Date;
 
 /**
  * The Room Database that contains the Task table.
  */
 @Database(entities = {Task.class}, version = 1)
+@TypeConverters({Converters.class})
 public abstract class ToDoDatabase extends RoomDatabase {
 
     private static ToDoDatabase INSTANCE;
@@ -46,4 +52,14 @@ public abstract class ToDoDatabase extends RoomDatabase {
         }
     }
 
+}
+class Converters {
+    @TypeConverter
+    public static Date fromTimestamp(Long value) {
+        return value == null ? null : new Date(value);
+    }
+    @TypeConverter
+    public static Long dateToTimestamp(Date date) {
+        return date == null ? null : date.getTime();
+    }
 }

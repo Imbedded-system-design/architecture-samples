@@ -23,6 +23,7 @@ import com.example.android.architecture.blueprints.todoapp.data.Task;
 import com.example.android.architecture.blueprints.todoapp.data.source.TasksDataSource;
 import com.google.common.collect.Lists;
 
+import java.util.Date;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -40,8 +41,8 @@ public class TasksRemoteDataSource implements TasksDataSource {
 
     static {
         TASKS_SERVICE_DATA = new LinkedHashMap<>(2);
-        addTask("Build tower in Pisa", "Ground looks good, no foundation work required.");
-        addTask("Finish bridge in Tacoma", "Found awesome girders at half the cost!");
+        addTask("Build tower in Pisa", "Ground looks good, no foundation work required.", new Date());
+        addTask("Finish bridge in Tacoma", "Found awesome girders at half the cost!", new Date());
     }
 
     public static TasksRemoteDataSource getInstance() {
@@ -54,8 +55,8 @@ public class TasksRemoteDataSource implements TasksDataSource {
     // Prevent direct instantiation.
     private TasksRemoteDataSource() {}
 
-    private static void addTask(String title, String description) {
-        Task newTask = new Task(title, description);
+    private static void addTask(String title, String description, Date created) {
+        Task newTask = new Task(title, description, created);
         TASKS_SERVICE_DATA.put(newTask.getId(), newTask);
     }
 
@@ -102,7 +103,7 @@ public class TasksRemoteDataSource implements TasksDataSource {
 
     @Override
     public void completeTask(@NonNull Task task) {
-        Task completedTask = new Task(task.getTitle(), task.getDescription(), task.getId(), true);
+        Task completedTask = new Task(task.getTitle(), task.getDescription(), task.getId(), true, task.getCreated());
         TASKS_SERVICE_DATA.put(task.getId(), completedTask);
     }
 
@@ -114,7 +115,7 @@ public class TasksRemoteDataSource implements TasksDataSource {
 
     @Override
     public void activateTask(@NonNull Task task) {
-        Task activeTask = new Task(task.getTitle(), task.getDescription(), task.getId());
+        Task activeTask = new Task(task.getTitle(), task.getDescription(), task.getId(), task.getCreated());
         TASKS_SERVICE_DATA.put(task.getId(), activeTask);
     }
 

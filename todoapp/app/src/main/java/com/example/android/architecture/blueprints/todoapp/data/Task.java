@@ -26,6 +26,7 @@ import androidx.annotation.Nullable;
 import com.google.common.base.Objects;
 import com.google.common.base.Strings;
 
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -50,6 +51,9 @@ public final class Task {
     @ColumnInfo(name = "completed")
     private final boolean mCompleted;
 
+    @ColumnInfo(name = "created")
+    private final Date mCreated;
+
     /**
      * Use this constructor to create a new active Task.
      *
@@ -59,6 +63,10 @@ public final class Task {
     @Ignore
     public Task(@Nullable String title, @Nullable String description) {
         this(title, description, UUID.randomUUID().toString(), false);
+    }
+    @Ignore
+    public Task(@Nullable String title, @Nullable String description, Date created) {
+        this(title, description, UUID.randomUUID().toString(), false, created);
     }
 
     /**
@@ -74,6 +82,11 @@ public final class Task {
         this(title, description, id, false);
     }
 
+    @Ignore
+    public Task(@Nullable String title, @Nullable String description, @NonNull String id, Date created) {
+        this(title, description, id, false, created);
+    }
+
     /**
      * Use this constructor to create a new completed Task.
      *
@@ -86,6 +99,12 @@ public final class Task {
         this(title, description, UUID.randomUUID().toString(), completed);
     }
 
+    @Ignore
+    public Task(@Nullable String title, @Nullable String description, boolean completed, Date created) {
+        this(title, description, UUID.randomUUID().toString(), completed, created);
+    }
+
+
     /**
      * Use this constructor to specify a completed Task if the Task already has an id (copy of
      * another Task).
@@ -93,14 +112,21 @@ public final class Task {
      * @param title       title of the task
      * @param description description of the task
      * @param id          id of the task
-     * @param completed   true if the task is completed, false if it's active
+     * mpleted   true if the task is completed, false if it's active
      */
+    @Ignore
     public Task(@Nullable String title, @Nullable String description,
                 @NonNull String id, boolean completed) {
+        this(title, description, id, completed, null);
+    }
+
+    public Task(@Nullable String title, @Nullable String description,
+                @NonNull String id, boolean completed, Date created) {
         mId = id;
         mTitle = title;
         mDescription = description;
         mCompleted = completed;
+        mCreated = created;
     }
 
     @NonNull
@@ -111,6 +137,11 @@ public final class Task {
     @Nullable
     public String getTitle() {
         return mTitle;
+    }
+
+    @Nullable
+    public Date getCreated() {
+        return mCreated;
     }
 
     @Nullable
@@ -147,12 +178,13 @@ public final class Task {
         Task task = (Task) o;
         return Objects.equal(mId, task.mId) &&
                Objects.equal(mTitle, task.mTitle) &&
-               Objects.equal(mDescription, task.mDescription);
+               Objects.equal(mDescription, task.mDescription) &&
+                Objects.equal(mCreated, task.mCreated);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(mId, mTitle, mDescription);
+        return Objects.hashCode(mId, mTitle, mDescription, mCreated);
     }
 
     @Override
