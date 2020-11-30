@@ -372,8 +372,21 @@ public class TasksFragment extends Fragment implements TasksContract.View {
     @Override
     public void showTaskMarkedComplete() {
         // task가 완료되었을 때 마다 view 에서 불리는 코드.
-        // TODO : 1) TEXT LCD 에서 "Task marked complete" 글귀가 2초 뜬 후 사라진다.
-        LCDWrite(4, 2); // LCD에 글귀 출력
+        //  1) TEXT LCD 에서 "Task marked complete" 글귀가 2초 뜬 후 사라진다.
+        class NewRunnable implements Runnable {
+            @Override
+            public void run() {
+                try {
+                    LCDWrite(4, 2); // LCD에 글귀 출력
+                    // TODO : "Task marked complete" 팝업과 LCDWrite 가 동시에 실행되는지 확인 필요 (Thread 안넣으면 LCDWrite 2초 기다린 후 팝업 떠짐)
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        NewRunnable nr = new NewRunnable();
+        Thread t = new Thread(nr);
+        t.start();
         showMessage(getString(R.string.task_marked_complete));
     }
 
