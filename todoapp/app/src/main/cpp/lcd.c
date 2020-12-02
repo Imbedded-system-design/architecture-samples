@@ -53,8 +53,8 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
 JNIEXPORT jint JNICALL
 Java_com_example_android_architecture_blueprints_todoapp_taskdetail_TaskDetailFragment_LCDWriteDate(JNIEnv *env, jobject thiz, jstring text) {
     const char *data = (*env)->GetStringUTFChars(env, text, NULL);
-    char date[10];
-    char time[5];
+    char date[16] = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
+    char time[16] = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
     int i = 0, j = 0;
     int isNext = 0;
 
