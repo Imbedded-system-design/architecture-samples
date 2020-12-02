@@ -49,6 +49,13 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * Main UI for the task detail screen.
  */
 public class TaskDetailFragment extends Fragment implements TaskDetailContract.View {
+    static {
+        System.loadLibrary("lcd");          // LCD
+    }
+
+    public native int LCDEmpty();
+    public native int LCDWriteDate(String date);
+
     @NonNull
     private static final String ARGUMENT_TASK_ID = "TASK_ID";
 
@@ -148,6 +155,7 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     @Override
     public void hideCreated() {
         // TODO 1-2) LCD Empty() 함수 사용
+        LCDEmpty();
     }
 
     @Override
@@ -155,6 +163,7 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd\nHH:mm");
         //출력결과 : 2020.11.30\n16:36
         // TODO 1-1) LCD_write()로 sdf.format(created)를 출력한다
+        LCDWriteDate(sdf.format(created));
     }
 
     @Override

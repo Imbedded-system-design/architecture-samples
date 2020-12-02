@@ -13,7 +13,7 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
     int fd, ret;
 
     // Check Range
-    if(data < 0 || data > 255){
+    if(data < 0 || data > 8){
         __android_log_print(ANDROID_LOG_ERROR, "LEDWrite", "invalid range");
         return -1;
     }
@@ -24,6 +24,16 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
         __android_log_print(ANDROID_LOG_ERROR, "LEDWrite", "device open error");
         return -1;
     }
+
+    if(data == 0) data = 0;
+    else if(data == 1) data = 128;
+    else if(data == 2) data = 192;
+    else if(data == 3) data = 224;
+    else if(data == 4) data = 240;
+    else if(data == 5) data = 248;
+    else if(data == 6) data = 252;
+    else if(data == 7) data = 254;
+    else if(data == 8) data = 255;
 
     ret = write(fd, &data, 1);
     if(ret < 0){
