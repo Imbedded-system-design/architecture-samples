@@ -19,7 +19,7 @@ add_library(7segment SHARED src/main/cpp/7segment.c)
 add_library(dotmatrix SHARED src/main/cpp/dotmatrix.c)
 add_library(lcd SHARED src/main/cpp/lcd.c)
 add_library(led SHARED src/main/cpp/led.c)
-
+add_library(pushbutton SHARED src/main/cpp/pushbutton.c)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because CMake includes system libraries in the search path by
@@ -43,3 +43,4 @@ target_link_libraries(7segment ${log-lib} )
 target_link_libraries(dotmatrix ${log-lib} )
 target_link_libraries(lcd ${log-lib} )
 target_link_libraries(led ${log-lib} )
+target_link_libraries(pushbutton ${log-lib} )

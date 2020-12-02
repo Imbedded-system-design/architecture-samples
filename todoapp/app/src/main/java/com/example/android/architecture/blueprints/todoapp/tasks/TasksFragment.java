@@ -57,12 +57,15 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         System.loadLibrary("dotmatrix");    // Dot Matrix
         System.loadLibrary("lcd");          // LCD
         System.loadLibrary("led");          // LED
+        System.loadLibrary("pushbutton");   // Push Button
     }
 
     public native int DotmatrixWrite(int data);
     public native int LCDEmpty();
     public native int LCDWrite(int data, int delay);
+    public native int LCDWriteText(String data);
     public native int LEDWrite(int data);
+    public native int PushButton();
 
     private TasksContract.Presenter mPresenter;
 
@@ -170,13 +173,25 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         class NewRunnable implements Runnable {
             @Override
             public void run() {
+                int pushButtonNum = -1;
+                boolean flag = false;
+
                 while (true) {
                     try {
-                        int pushButtonNum = -1;
                         //TODO 4) pushButton에서 눌려진 값을 받아와 pushButtonNum에 넣는다.
-                        if (pushButtonNum > -1) {
-                            //TODO 5) LCDWrite에 mListAdapter.getItem(pushButtonNum).getDescription() string을 5초간 출력한다.
+                        pushButtonNum = PushButton();
+                        //TODO 5) pushButton을 누르는 동안 LCDWrite에 mListAdapter.getItem(pushButtonNum).getDescription() string을 출력한다.
+                        if(pushButtonNum > -1){
+                            flag = true;
+                            LCDWriteText(mListAdapter.getItem(pushButtonNum).getDescription());
                         }
+                        else if(pushButtonNum == -1){
+                            if(flag){
+                                flag = false;
+                                LCDEmpty();
+                            }
+                        }
+                        Thread.sleep(200);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
