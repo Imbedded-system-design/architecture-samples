@@ -128,6 +128,11 @@ public class TaskDetailPresenter implements TaskDetailContract.Presenter {
         mTaskDetailView.showTaskMarkedActive();
     }
 
+    @Override
+    public void goAlarm() {
+        mTaskDetailView.goToAlarm(mTaskId);
+    }
+
     private void showTask(@NonNull Task task) {
         String title = task.getTitle();
         String description = task.getDescription();

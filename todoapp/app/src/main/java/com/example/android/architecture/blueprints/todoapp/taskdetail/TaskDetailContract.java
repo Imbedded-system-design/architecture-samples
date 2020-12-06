@@ -54,6 +54,8 @@ public interface TaskDetailContract {
 
         void showTaskMarkedActive();
 
+        void goToAlarm(String taskId);
+
         boolean isActive();
     }
 
@@ -66,5 +68,7 @@ public interface TaskDetailContract {
         void completeTask();
 
         void activateTask();
+
+        void goAlarm();
     }
 }

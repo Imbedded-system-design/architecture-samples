@@ -33,6 +33,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailActivity" />
+        <activity android:name="com.example.android.architecture.blueprints.todoapp.taskdetail.TaskDetailAlarmActivity" />
         <activity android:name="com.example.android.architecture.blueprints.todoapp.addedittask.AddEditTaskActivity" />
         <activity
             android:name="com.example.android.architecture.blueprints.todoapp.statistics.StatisticsActivity"
@@ -43,6 +44,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".tasks.TasksActivity" />
         </activity>
+        <receiver android:name=".AlarmReceiver" />
     </application>
 
 </manifest>

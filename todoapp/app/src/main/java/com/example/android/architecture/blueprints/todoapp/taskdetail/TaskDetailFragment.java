@@ -117,7 +117,7 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_delete:
-                mPresenter.deleteTask();
+                mPresenter.goAlarm();
                 return true;
         }
         return false;
@@ -203,6 +203,13 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     public void showTaskMarkedActive() {
         Snackbar.make(getView(), getString(R.string.task_marked_active), Snackbar.LENGTH_LONG)
                 .show();
+    }
+
+    @Override
+    public void goToAlarm(@NonNull String taskId) {
+        Intent intent = new Intent(getContext(), TaskDetailAlarmActivity.class);
+        intent.putExtra(TaskDetailAlarmActivity.ARGUMENT_ALARM_TASK_ID, taskId);
+        startActivity(intent);
     }
 
     @Override

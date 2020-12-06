@@ -26,6 +26,8 @@ import androidx.fragment.app.Fragment;
 import androidx.core.content.ContextCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.appcompat.widget.PopupMenu;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -178,7 +180,6 @@ public class TasksFragment extends Fragment implements TasksContract.View {
 
                 while (true) {
                     try {
-                        //TODO 4) pushButton에서 눌려진 값을 받아와 pushButtonNum에 넣는다.
                         pushButtonNum = PushButton();
                         //TODO 5) pushButton을 누르는 동안 LCDWrite에 mListAdapter.getItem(pushButtonNum).getDescription() string을 출력한다.
                         if(pushButtonNum > -1){
@@ -193,6 +194,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
                         }
                         Thread.sleep(200);
                     } catch (Exception e) {
+                        Log.e("thread에러", e.getMessage());
                         e.printStackTrace();
                     }
                 }
