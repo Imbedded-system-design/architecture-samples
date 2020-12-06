@@ -154,7 +154,6 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
 
     @Override
     public void hideCreated() {
-        // TODO 1-2) LCD Empty() 함수 사용
         LCDEmpty();
     }
 
@@ -162,7 +161,6 @@ public class TaskDetailFragment extends Fragment implements TaskDetailContract.V
     public void showCreated(Date created) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd\nHH:mm");
         //출력결과 : 2020.11.30\n16:36
-        // TODO 1-1) LCD_write()로 sdf.format(created)를 출력한다
         LCDWriteDate(sdf.format(created));
     }
 

@@ -204,7 +204,6 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         t.start();
 
 
-
         return root;
     }
 
@@ -330,7 +329,7 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         // 초기 화면 진입이나 refresh 될 때마다 task(항목)을 불러오기 위해 view 에서 불리는 코드.
         // 2) LED - mListAdapter.getCurrentActiveItems(); 를 data로 전달하고, 해당 값을 통해 현재 active 되어있는 항목의 개수를 (0~8개)표현하는 함수 호출.
         int count = mListAdapter.getCurrentActiveItems();
-        LEDWrite(Math.min(count, 8)); // TODO 3) Available Range: 0~255 -> 0~8
+        LEDWrite(Math.min(count, 8));
 
         mTasksView.setVisibility(View.VISIBLE);
         mNoTasksView.setVisibility(View.GONE);
@@ -417,7 +416,6 @@ public class TasksFragment extends Fragment implements TasksContract.View {
             public void run() {
                 try {
                     LCDWrite(4, 2); // LCD에 글귀 출력
-                    // TODO 2) "Task marked complete" 팝업과 LCDWrite 가 동시에 실행되는지 확인 필요 (Thread 안넣으면 LCDWrite 2초 기다린 후 팝업 떠짐)
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
