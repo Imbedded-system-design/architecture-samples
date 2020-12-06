@@ -149,6 +149,7 @@ public class TaskDetailAlarmActivity extends AppCompatActivity {
                         //TODO 3) pushButtonNum = push button 누른 값을 받아온다. (1~9)
                         if(pushButtonNum > 0) {
                             button.setText(String.valueOf(pushButtonNum));
+                            isThreadRunning = false;
                             break;
                         }
                         Thread.sleep(400);
