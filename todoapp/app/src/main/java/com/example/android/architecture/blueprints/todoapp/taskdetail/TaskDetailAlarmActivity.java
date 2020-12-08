@@ -29,6 +29,10 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public class TaskDetailAlarmActivity extends AppCompatActivity {
+    static {
+        System.loadLibrary("pushbutton");   // Push Button
+    }
+    public native int PushButton();
 
     public static final String ARGUMENT_ALARM_TASK_ID = "ALARM_TASK_ID";
     public static final String ARGUMENT_ALARM_TASK_TITLE = "ALARM_TASK_TITLE";
@@ -147,12 +151,13 @@ public class TaskDetailAlarmActivity extends AppCompatActivity {
                         if(!isThreadRunning) break;
                         int pushButtonNum = 0;
                         //TODO 3) pushButtonNum = push button 누른 값을 받아온다. (1~9)
+                        pushButtonNum = PushButton();
                         if(pushButtonNum > 0) {
                             button.setText(String.valueOf(pushButtonNum));
                             isThreadRunning = false;
                             break;
                         }
-                        Thread.sleep(400);
+                        Thread.sleep(200);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }

@@ -36,6 +36,17 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.test.espresso.IdlingResource;
 
 public class TasksActivity extends AppCompatActivity {
+    static {
+        System.loadLibrary("dotmatrix");    // Dot Matrix
+        System.loadLibrary("lcd");          // LCD
+        System.loadLibrary("led");          // LED
+        System.loadLibrary("7segment");     // 7-Segment
+    }
+
+    public native int DotmatrixWrite(int data);
+    public native int LCDEmpty();
+    public native int LEDWrite(int data);
+    public native int SSegmentEmpty();
 
     private static final String CURRENT_FILTERING_KEY = "CURRENT_FILTERING_KEY";
 
@@ -82,6 +93,12 @@ public class TasksActivity extends AppCompatActivity {
                     (TasksFilterType) savedInstanceState.getSerializable(CURRENT_FILTERING_KEY);
             mTasksPresenter.setFiltering(currentFiltering);
         }
+
+        // 하드웨어 기기 리셋
+        DotmatrixWrite(0);
+        LCDEmpty();
+        LEDWrite(0);
+        SSegmentEmpty();
     }
 
     @Override

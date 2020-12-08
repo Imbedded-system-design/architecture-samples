@@ -49,6 +49,12 @@ JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_
     return EmptyLCD();
 }
 
+JNIEXPORT jint JNICALL
+Java_com_example_android_architecture_blueprints_todoapp_tasks_TasksActivity_LCDEmpty(JNIEnv *env, jobject thiz) {
+    // TODO: implement LCDEmpty()
+    return EmptyLCD();
+}
+
 // LCD 화면에 날짜를 작성하는 함수
 JNIEXPORT jint JNICALL
 Java_com_example_android_architecture_blueprints_todoapp_taskdetail_TaskDetailFragment_LCDWriteDate(JNIEnv *env, jobject thiz, jstring text) {

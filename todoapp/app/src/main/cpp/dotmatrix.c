@@ -9,6 +9,32 @@
 #include <sys/ioctl.h>
 #include <android/log.h>
 
+JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_tasks_TasksActivity_DotmatrixWrite(JNIEnv *env, jobject thiz, jint data) {
+    // TODO: implement DotmatrixWrite()
+    int fd, ret;
+
+    // Check Data
+    if(data < 0){
+        __android_log_print(ANDROID_LOG_ERROR, "DotMatrixWrite", "invalid data");
+        return -1;
+    }
+
+    fd = open("/dev/matrix", O_RDWR);
+    if (fd < 0) {
+        __android_log_print(ANDROID_LOG_ERROR, "DotMatrixWrite", "device open error");
+        return -1;
+    }
+
+    ret = write(fd, &data, sizeof(data));
+    if (ret < 0) {
+        __android_log_print(ANDROID_LOG_ERROR, "DotMatrixWrite", "write error");
+        return -1;
+    }
+
+    close(fd);
+    return 0;
+}
+
 JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_tasks_TasksFragment_DotmatrixWrite(JNIEnv *env, jobject thiz, jint data) {
     int fd, ret;
 

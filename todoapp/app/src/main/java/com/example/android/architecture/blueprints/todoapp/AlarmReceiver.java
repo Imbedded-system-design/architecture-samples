@@ -18,6 +18,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class AlarmReceiver extends BroadcastReceiver {
+    static {
+        System.loadLibrary("7segment");     // 7-Segment
+    }
+    public native int SSegmentWriteTime(int data);
+
     @Override
     public void onReceive(Context context, Intent intent) {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
@@ -66,6 +71,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         int time = Integer.parseInt(sdf.format(date));
         // LED_WRITE(time);
         //TODO 1) : LED에 time을 출력한다. 출력 예시 : 2210 or 22.10 (오후 10시 10분)
+        SSegmentWriteTime(time);
         //TODO 2) : BUZZER를 작동시킨다.
     }
 }
