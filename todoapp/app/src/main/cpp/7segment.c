@@ -9,6 +9,33 @@
 #include <sys/ioctl.h>
 #include <android/log.h>
 
+JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_taskdetail_TaskDetailActivity_SSegmentEmpty(JNIEnv *env, jobject thiz) {
+    // TODO: implement SSegmentEmpty()
+    int fd, ret;
+    unsigned char bytevalues[4];
+
+    // Check File Driver
+    fd = open("/dev/7segment", O_RDWR);
+    if (fd < 0) {
+        __android_log_print(ANDROID_LOG_ERROR, "SSegmentEmpty", "device open error");
+        return -1;
+    }
+
+    bytevalues[0] = 0;
+    bytevalues[1] = 0;
+    bytevalues[2] = 0;
+    bytevalues[3] = 0;
+
+    ret = write(fd, bytevalues, sizeof(bytevalues));
+    if (ret < 0) {
+        __android_log_print(ANDROID_LOG_ERROR, "SSegmentEmpty", "write error");
+        return -1;
+    }
+
+    close(fd);
+    return 0;
+}
+
 JNIEXPORT jint JNICALL Java_com_example_android_architecture_blueprints_todoapp_tasks_TasksActivity_SSegmentEmpty(JNIEnv *env, jobject thiz) {
     // TODO: implement SSegmentEmpty()
     int fd, ret;

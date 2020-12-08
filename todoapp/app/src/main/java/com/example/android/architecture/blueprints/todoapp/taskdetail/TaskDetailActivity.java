@@ -32,6 +32,13 @@ import com.example.android.architecture.blueprints.todoapp.util.ActivityUtils;
  * Displays task details screen.
  */
 public class TaskDetailActivity extends AppCompatActivity {
+    static {
+        System.loadLibrary("7segment");     // 7-Segment
+        System.loadLibrary("led");          // LED
+    }
+
+    public native int LEDWrite(int data);
+    public native int SSegmentEmpty();
 
     public static final String EXTRA_TASK_ID = "TASK_ID";
     public static final String EXTRA_TASK_FROM_ALARM = "TASK_FROM_ALARM";
@@ -75,6 +82,8 @@ public class TaskDetailActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("alarm", 0);
         if (sharedPreferences.getBoolean("isNotificationWait", true)) {
             // TODO : SEG, LED OFF
+            LEDWrite(0);
+            SSegmentEmpty();
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean("isNotificationWait", false);
             editor.apply();
