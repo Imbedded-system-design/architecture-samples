@@ -21,8 +21,10 @@ import java.util.Date;
 public class AlarmReceiver extends BroadcastReceiver {
     static {
         System.loadLibrary("7segment");     // 7-Segment
+        System.loadLibrary("led");          // led
     }
     public native int SSegmentWriteTime(int data);
+    public native int LEDWrite(int data);
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -80,8 +82,11 @@ public class AlarmReceiver extends BroadcastReceiver {
                 while (sharedPreferences.getBoolean("isNotificationWait", true)) {
                     try {
                         // TODO LED_WRITE(8)
+                        LEDWrite(8);
                         Thread.sleep(1000);
                         // TODO LED_EMPTY()
+                        LEDWrite(0);
+                        Thread.sleep(1000);
                     } catch (Exception e) {
                         Log.e("thread에러", e.getMessage());
                         e.printStackTrace();

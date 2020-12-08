@@ -110,7 +110,7 @@ public class TaskDetailAlarmActivity extends AppCompatActivity {
 
                 Date currentDateTime = calendar.getTime();
                 String date_text = new SimpleDateFormat("a hh:mm~", Locale.getDefault()).format(currentDateTime);
-                Toast.makeText(getApplicationContext(),"We are going to tell you at" + date_text, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"We are going to tell you at " + date_text, Toast.LENGTH_SHORT).show();
 
                 //  Preference에 설정한 값 저장
                 SharedPreferences.Editor editor = getSharedPreferences("alarm", MODE_PRIVATE).edit();
