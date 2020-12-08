@@ -56,6 +56,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         } else builder.setSmallIcon(R.mipmap.ic_launcher);
 
         final SharedPreferences sharedPreferences = context.getSharedPreferences("alarm", 0);
+        sharedPreferences.edit().putBoolean("isNotificationWait", true).apply();
         String taskTitle = sharedPreferences.getString("alarmTitle", "");
         builder.setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)

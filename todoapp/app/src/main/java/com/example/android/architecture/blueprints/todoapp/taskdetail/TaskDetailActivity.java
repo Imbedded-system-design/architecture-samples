@@ -51,12 +51,6 @@ public class TaskDetailActivity extends AppCompatActivity {
 
         // Get the requested task id
         String taskId = getIntent().getStringExtra(EXTRA_TASK_ID);
-        if (getIntent().getBooleanExtra(EXTRA_TASK_FROM_ALARM, false)) {
-            // TODO : SEG OFF
-            SharedPreferences.Editor editor = getSharedPreferences("alarm", MODE_PRIVATE).edit();
-            editor.putBoolean("isNotificationWait", false);
-            editor.apply();
-        }
 
         TaskDetailFragment taskDetailFragment = (TaskDetailFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
@@ -73,6 +67,18 @@ public class TaskDetailActivity extends AppCompatActivity {
                 taskId,
                 Injection.provideTasksRepository(getApplicationContext()),
                 taskDetailFragment);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences sharedPreferences = getSharedPreferences("alarm", 0);
+        if (sharedPreferences.getBoolean("isNotificationWait", true)) {
+            // TODO : SEG, LED OFF
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean("isNotificationWait", false);
+            editor.apply();
+        }
     }
 
     @Override
