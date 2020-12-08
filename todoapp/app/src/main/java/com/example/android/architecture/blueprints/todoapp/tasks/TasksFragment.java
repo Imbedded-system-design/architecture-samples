@@ -426,12 +426,12 @@ public class TasksFragment extends Fragment implements TasksContract.View {
         NewRunnable nr = new NewRunnable();
         Thread t = new Thread(nr);
         t.start();
-        showMessage(getString(R.string.task_marked_complete));
+//        showMessage(getString(R.string.task_marked_complete));
     }
 
     @Override
     public void showTaskMarkedActive() {
-        showMessage(getString(R.string.task_marked_active));
+//        showMessage(getString(R.string.task_marked_active));
     }
 
     @Override
