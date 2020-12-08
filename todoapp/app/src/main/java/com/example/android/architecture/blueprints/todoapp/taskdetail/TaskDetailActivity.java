@@ -16,6 +16,7 @@
 
 package com.example.android.architecture.blueprints.todoapp.taskdetail;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import androidx.annotation.VisibleForTesting;
 import androidx.test.espresso.IdlingResource;
@@ -52,6 +53,9 @@ public class TaskDetailActivity extends AppCompatActivity {
         String taskId = getIntent().getStringExtra(EXTRA_TASK_ID);
         if (getIntent().getBooleanExtra(EXTRA_TASK_FROM_ALARM, false)) {
             // TODO : SEG OFF
+            SharedPreferences.Editor editor = getSharedPreferences("alarm", MODE_PRIVATE).edit();
+            editor.putBoolean("isNotificationWait", false);
+            editor.apply();
         }
 
         TaskDetailFragment taskDetailFragment = (TaskDetailFragment) getSupportFragmentManager()

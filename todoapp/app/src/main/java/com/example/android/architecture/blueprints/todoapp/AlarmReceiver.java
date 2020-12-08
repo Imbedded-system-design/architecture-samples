@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 
@@ -52,7 +53,7 @@ public class AlarmReceiver extends BroadcastReceiver {
             }
         } else builder.setSmallIcon(R.mipmap.ic_launcher);
 
-        SharedPreferences sharedPreferences = context.getSharedPreferences("alarm", 0);
+        final SharedPreferences sharedPreferences = context.getSharedPreferences("alarm", 0);
         String taskTitle = sharedPreferences.getString("alarmTitle", "");
         builder.setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
@@ -73,6 +74,24 @@ public class AlarmReceiver extends BroadcastReceiver {
         // LED_WRITE(time);
         //TODO 1) : LED에 time을 출력한다. 출력 예시 : 2210 or 22.10 (오후 10시 10분)
         SSegmentWriteTime(time);
-        //TODO 2) : BUZZER를 작동시킨다.
+        class NewRunnable implements Runnable {
+            @Override
+            public void run() {
+                while (sharedPreferences.getBoolean("isNotificationWait", true)) {
+                    try {
+                        // TODO LED_WRITE(8)
+                        Thread.sleep(1000);
+                        // TODO LED_EMPTY()
+                    } catch (Exception e) {
+                        Log.e("thread에러", e.getMessage());
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        NewRunnable nr = new NewRunnable();
+        Thread t = new Thread(nr);
+        t.start();
     }
 }
