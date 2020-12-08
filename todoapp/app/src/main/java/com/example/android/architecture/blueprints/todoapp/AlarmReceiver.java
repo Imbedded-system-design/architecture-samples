@@ -29,6 +29,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         Intent notificationIntent = new Intent(context, TaskDetailActivity.class);
         notificationIntent.putExtra(TaskDetailActivity.EXTRA_TASK_ID,
                 intent.getStringExtra(TaskDetailAlarmActivity.ARGUMENT_ALARM_TASK_ID));
+        notificationIntent.putExtra(TaskDetailActivity.EXTRA_TASK_FROM_ALARM, true);
 
         notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
                 | Intent.FLAG_ACTIVITY_SINGLE_TOP);

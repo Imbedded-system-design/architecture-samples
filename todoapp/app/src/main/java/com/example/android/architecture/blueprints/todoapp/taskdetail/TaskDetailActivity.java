@@ -33,6 +33,7 @@ import com.example.android.architecture.blueprints.todoapp.util.ActivityUtils;
 public class TaskDetailActivity extends AppCompatActivity {
 
     public static final String EXTRA_TASK_ID = "TASK_ID";
+    public static final String EXTRA_TASK_FROM_ALARM = "TASK_FROM_ALARM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,9 @@ public class TaskDetailActivity extends AppCompatActivity {
 
         // Get the requested task id
         String taskId = getIntent().getStringExtra(EXTRA_TASK_ID);
+        if (getIntent().getBooleanExtra(EXTRA_TASK_FROM_ALARM, false)) {
+            // TODO : SEG OFF
+        }
 
         TaskDetailFragment taskDetailFragment = (TaskDetailFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.contentFrame);
